@@ -1,0 +1,8 @@
+<div class="navbar-shadow">
+  <div class="navbar">
+    <app-logo size="s"></app-logo>
+    <div class="options">
+      <app-button *ngIf="!isRunningGame" label="Salir" [onClick]="goBack"></app-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="game-holder">
+  <app-ball [large]="true" value="{{currentValue}}"></app-ball>
+</div>
+<div class="game-holder-result">
+  <span *ngIf="prizeValue != undefined && prizeValue > 0">¡Felicidades! Te llevas {{prizeValue}} 🤑💰</span>
+  <span *ngIf="prizeValue != undefined && prizeValue == 0">¡Vuelve a intentarlo! 😀</span>
+</div>
+<div class="game-holder-button">
+  <app-button *ngIf="prizeValue != undefined" label="Volver a empezar" [buttonType]="confirmType" [onClick]="resetGame"></app-button>
+</div>

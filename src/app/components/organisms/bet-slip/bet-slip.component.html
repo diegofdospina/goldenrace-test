@@ -1,0 +1,27 @@
+<div class="bet-slip-shadow">
+  <div class="bet-slip">
+    <span *ngIf="currentBallValue && !isRunningGame">Presione sobre la balota para remover</span>
+    <span *ngIf="isRunningGame" class="bet-slip-text">Apostando a la balota</span>
+    <div class="ball-selection-holder">
+      <app-ball *ngIf="currentBallValue" value="{{currentBallValue}}" [onClickListener]="removeSelection"></app-ball>
+    </div>
+    <span *ngIf="!isRunningGame" class="bet-slip-text">2. Indique el valor a apostar:</span>
+    <span *ngIf="isRunningGame" class="bet-slip-text">Por el valor de</span>
+    <div class="bet-slip-input">
+      <app-button *ngIf="!isRunningGame" label="-" [onClick]="decrease5"></app-button>
+      <span>{{currentBetValue}}</span>
+      <app-button *ngIf="!isRunningGame" label="+" [onClick]="increase5"></app-button>
+    </div>
+    <div class="bet-slip-input-options">
+      <app-button *ngIf="!isRunningGame" label="+ 10" [onClick]="increase10"></app-button>
+      <app-button *ngIf="!isRunningGame" label="+ 20" [onClick]="increase20"></app-button>
+      <app-button *ngIf="!isRunningGame" label="+ 50" [onClick]="increase50"></app-button>
+      <app-button *ngIf="!isRunningGame" label="+ 100" [onClick]="increase100"></app-button>
+      <app-button *ngIf="!isRunningGame" label="+ 200" [onClick]="increase200"></app-button>
+      <app-button *ngIf="!isRunningGame" label="+ 500" [onClick]="increase500"></app-button>
+      <app-button *ngIf="!isRunningGame" label="Limpiar apuesta" [onClick]="cleanBet" [buttonType]="grayColor"></app-button>
+    </div>
+    <span *ngIf="canConfirmBet && !isRunningGame" class="bet-slip-text">3. Confirme la apuesta:</span>
+    <app-button *ngIf="canConfirmBet && !isRunningGame" class="bet-slip-confirm" label="Apostar" [onClick]="confirmBet" [buttonType]="confirmColor"></app-button>
+  </div>
+</div>

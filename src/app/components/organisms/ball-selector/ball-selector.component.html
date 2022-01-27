@@ -1,0 +1,7 @@
+<div class="ball-selector-container">
+  <span><strong>1. Para iniciar una apuesta</strong>, selecciona una balota:</span>
+  <div class="ball-selector">
+    <app-ball *ngFor="let item of options; let i = index" value="{{item}}" [onClickListener]="onBallSelectedListener">
+    </app-ball>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .game-container {
+    display: flex;
+    flex-direction: row;
+
+    app-ball-selector {
+      width: 70%;
+    }
+
+    app-game-holder {
+      width: 70%;
+    }
+
+    app-bet-slip {
+      width: 30%;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    .game-container {
+      flex-direction: column;
+
+      app-ball-selector {
+        width: 100%;
+      }
+
+      app-game-holder {
+        width: 100%;
+      }
+
+      app-bet-slip {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .container {
+    .game-container {
+      app-ball-selector {
+        width: 50%;
+      }
+
+      app-game-holder {
+        width: 50%;
+      }
+
+      app-bet-slip {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <div class="game-container">
+    <app-ball-selector [onBallSelectedListener]="onBallSelectedListener" [className]="gameNotRunningClass"></app-ball-selector>
+    <app-game-holder [className]="gameRunningClass"></app-game-holder>
+    <app-bet-slip #betSlipComponent></app-bet-slip>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+.app-button-container {
+  background-color: #e5aa2a;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.default-color {
+    background-color: #e5aa2a;
+  }
+
+  &.confirm-color {
+    background-color: #315e8f;
+
+    span {
+      color: #ebebfa;
+    }
+  }
+
+  &.gray-color {
+    background-color: #cecece;
+  }
+
+  span {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #38406b;
+    cursor: pointer;
+  }
+
+  &.default-color:hover {
+    background-color: #bd8f20;
+  }
+
+  &.default-color:active {
+    background-color: #e5aa2a;
+  }
+
+  &.gray-color:hover {
+    background-color: #b6b6b6;
+  }
+
+  &.gray-color:active {
+    background-color: #dcdcdc;
+  }
+
+  &.confirm-color:hover {
+    background-color: #214970;
+  }
+
+  &.confirm-color:active {
+    background-color: #315e8f;
+  }
+}
+
+.app-button-shadow {
+  background-color: #987523;
+  border-radius: 0.5rem;
+  padding-bottom: 0.2rem;
+
+  &.default-color {
+    background-color: #987523;
+  }
+
+  &.gray-color {
+    background-color: #989898;
+  }
+
+  &.confirm-color {
+    background-color: #14385b;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0)
+  }
+}
+
+

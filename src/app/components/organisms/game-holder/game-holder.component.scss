@@ -1,0 +1,29 @@
+.game-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 4rem;
+}
+
+.game-holder-result {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: #2f3751;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.game-holder-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: center;
+  align-content: center;
+}

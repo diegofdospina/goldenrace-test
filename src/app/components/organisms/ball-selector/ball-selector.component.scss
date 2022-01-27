@@ -1,0 +1,21 @@
+.ball-selector-container {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    padding: 1rem;
+    font-family: sans-serif;
+    color: #38406b;
+  }
+
+  .ball-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    app-ball {
+      padding: 1rem;
+    }
+
+  }
+}
